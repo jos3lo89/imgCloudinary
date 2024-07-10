@@ -1,0 +1,26 @@
+{
+  "name": "imgcloud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --env-file .env ./dist/index.js",
+    "build": "rimraf ./dist && tsc",
+    "dev": "ts-node-dev --respawn --clear --env-file .env src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cloudinary": "^2.2.0",
+    "express": "^4.19.2",
+    "multer": "1.4.5-lts.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/multer": "^1.4.11",
+    "@types/node": "^20.14.1",
+    "rimraf": "^5.0.7",
+    "ts-node-dev": "^2.0.0"
+  }
+}
